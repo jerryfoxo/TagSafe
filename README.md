@@ -35,7 +35,30 @@ TagSafe can also optionally synchronize the selected warning tags with image ALT
 
 TagSafe appears directly inside the Bluesky post composer.
 
-Select the tags you want and TagSafe creates a warning line such as:
+## License
 
-```text
-CW: #spoilers #violence
+TagSafe is source-available under the
+[PolyForm Noncommercial License 1.0.0](LICENSE).
+
+You may use, inspect, modify, and redistribute TagSafe for
+permitted noncommercial purposes.
+
+Commercial use requires separate permission from the copyright holder.
+
+Copyright © 2026 jerryfoxo.
+
+## Disclaimer
+
+TagSafe is provided on an "as is" basis, without warranties or guarantees.
+
+Use of TagSafe is at your own risk.
+
+While TagSafe is designed to preserve user-written post content and ALT text,
+bugs or changes to Bluesky's website may cause unexpected behavior.
+
+You are responsible for reviewing your post and ALT text before publishing.
+
+To the maximum extent permitted by applicable law, the developer is not liable
+for losses or damages resulting from the use of TagSafe.
+
+See the [LICENSE](LICENSE) for the applicable license terms and limitation of liability.
