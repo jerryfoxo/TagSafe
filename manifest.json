@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TagSafe",
+  "version": "0.2.3",
+  "description": "Content warning tags for Bluesky.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bsky.app/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
+    }
+  ]
+}

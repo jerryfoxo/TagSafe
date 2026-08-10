@@ -1,0 +1,23 @@
+# Local debug files
+debug.html
+debug.js
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node / test tooling
+node_modules/
+coverage/
+
+# Build output
+dist/
+build/
+
+# Packaged extension files
+*.zip
+*.xpi

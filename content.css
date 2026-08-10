@@ -1,0 +1,474 @@
+/* ============================================================
+   TagSafe — content.css
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Main panel + theme variables
+   ------------------------------------------------------------ */
+
+.tagsafe-panel {
+  --tagsafe-bg: #ffffff;
+  --tagsafe-surface: #f5f7fa;
+  --tagsafe-surface-hover: #e9edf2;
+  --tagsafe-text: #111827;
+  --tagsafe-muted: #5f6b7a;
+  --tagsafe-border: rgba(15, 23, 42, 0.2);
+  --tagsafe-accent: #0877db;
+  --tagsafe-accent-text: #ffffff;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding: 10px 12px;
+
+  border: 1px solid var(--tagsafe-border);
+  border-radius: 12px;
+
+  background: var(--tagsafe-bg);
+  color: var(--tagsafe-text);
+
+  font-family: inherit;
+}
+
+/* Dark / dim Bluesky composer */
+.tagsafe-panel[data-theme="dark"] {
+  --tagsafe-bg: #161e27;
+  --tagsafe-surface: #202a35;
+  --tagsafe-surface-hover: #2b3744;
+  --tagsafe-text: #f3f4f6;
+  --tagsafe-muted: #a9b3bf;
+  --tagsafe-border: rgba(255, 255, 255, 0.2);
+  --tagsafe-accent: #0a7aff;
+  --tagsafe-accent-text: #ffffff;
+}
+
+
+/* ------------------------------------------------------------
+   Header
+   ------------------------------------------------------------ */
+
+.tagsafe-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin-bottom: 10px;
+}
+
+.tagsafe-title {
+  color: var(--tagsafe-text);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+/* ------------------------------------------------------------
+   Preset select
+   ------------------------------------------------------------ */
+
+.tagsafe-presets {
+  appearance: auto;
+
+  min-width: 150px;
+  max-width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid var(--tagsafe-border);
+  border-radius: 8px;
+
+  padding: 6px 10px;
+
+  background: var(--tagsafe-surface);
+  color: var(--tagsafe-text);
+
+  font: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.tagsafe-presets option {
+  background: var(--tagsafe-bg);
+  color: var(--tagsafe-text);
+}
+
+.tagsafe-presets:hover {
+  background: var(--tagsafe-surface-hover);
+}
+
+.tagsafe-presets:focus-visible {
+  outline: 2px solid var(--tagsafe-accent);
+  outline-offset: 2px;
+}
+
+
+/* ------------------------------------------------------------
+   Scrollable tag area
+   ------------------------------------------------------------ */
+
+.tagsafe-tags {
+  box-sizing: border-box;
+
+  max-height: 280px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-right: 6px;
+
+  color: var(--tagsafe-text);
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--tagsafe-border) transparent;
+
+  overscroll-behavior: contain;
+}
+
+
+/* ------------------------------------------------------------
+   Tag categories
+   ------------------------------------------------------------ */
+
+.tagsafe-tag-group {
+  margin-bottom: 12px;
+}
+
+.tagsafe-tag-group:last-child {
+  margin-bottom: 0;
+}
+
+.tagsafe-tag-group-title {
+  margin-bottom: 6px;
+
+  color: var(--tagsafe-muted);
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.tagsafe-tag-group-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+/* ------------------------------------------------------------
+   Tag chips
+   ------------------------------------------------------------ */
+
+.tagsafe-tag {
+  box-sizing: border-box;
+
+  border: 1px solid var(--tagsafe-border);
+  border-radius: 999px;
+
+  padding: 5px 9px;
+
+  background: var(--tagsafe-surface);
+  color: var(--tagsafe-text);
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  cursor: pointer;
+
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    transform 80ms ease,
+    opacity 120ms ease;
+}
+
+.tagsafe-tag:hover {
+  background: var(--tagsafe-surface-hover);
+}
+
+.tagsafe-tag:active {
+  transform: scale(0.97);
+}
+
+.tagsafe-tag[aria-pressed="true"] {
+  border-color: var(--tagsafe-accent);
+
+  background: var(--tagsafe-accent);
+  color: var(--tagsafe-accent-text);
+
+  font-weight: 700;
+  opacity: 1;
+}
+
+.tagsafe-tag[aria-pressed="false"] {
+  opacity: 0.9;
+}
+
+.tagsafe-tag:focus-visible {
+  outline: 2px solid var(--tagsafe-accent);
+  outline-offset: 2px;
+}
+
+
+/* ------------------------------------------------------------
+   Preview
+   ------------------------------------------------------------ */
+
+.tagsafe-preview {
+  box-sizing: border-box;
+
+  margin-top: 10px;
+  margin-bottom: 8px;
+
+  padding: 8px 10px;
+
+  border: 1px solid var(--tagsafe-border);
+  border-radius: 8px;
+
+  background: var(--tagsafe-surface);
+  color: var(--tagsafe-text);
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+
+/* ------------------------------------------------------------
+   Shared control styles
+   ------------------------------------------------------------ */
+
+.tagsafe-save,
+.tagsafe-post-cw,
+.tagsafe-auto-alt,
+.tagsafe-settings-toggle,
+.tagsafe-settings-button {
+  box-sizing: border-box;
+
+  border: 1px solid var(--tagsafe-border);
+  border-radius: 8px;
+
+  padding: 6px 9px;
+
+  background: var(--tagsafe-surface);
+  color: var(--tagsafe-text);
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    opacity 120ms ease,
+    transform 80ms ease;
+}
+
+.tagsafe-save:hover,
+.tagsafe-post-cw:hover,
+.tagsafe-auto-alt:hover,
+.tagsafe-settings-toggle:hover,
+.tagsafe-settings-button:hover {
+  background: var(--tagsafe-surface-hover);
+}
+
+.tagsafe-save:active,
+.tagsafe-post-cw:active,
+.tagsafe-auto-alt:active,
+.tagsafe-settings-toggle:active,
+.tagsafe-settings-button:active {
+  transform: scale(0.98);
+}
+
+.tagsafe-save:focus-visible,
+.tagsafe-post-cw:focus-visible,
+.tagsafe-auto-alt:focus-visible,
+.tagsafe-settings-toggle:focus-visible,
+.tagsafe-settings-button:focus-visible {
+  outline: 2px solid var(--tagsafe-accent);
+  outline-offset: 2px;
+}
+
+
+/* ------------------------------------------------------------
+   Save default button
+   ------------------------------------------------------------ */
+
+.tagsafe-save {
+  margin-right: 6px;
+}
+
+.tagsafe-save[data-saved="true"] {
+  opacity: 0.8;
+}
+
+
+/* ------------------------------------------------------------
+   Post tags button
+   ------------------------------------------------------------ */
+
+.tagsafe-post-cw {
+  margin-right: 6px;
+}
+
+.tagsafe-post-cw[aria-pressed="true"] {
+  border-color: var(--tagsafe-accent);
+
+  background: var(--tagsafe-accent);
+  color: var(--tagsafe-accent-text);
+
+  opacity: 1;
+}
+
+.tagsafe-post-cw[aria-pressed="false"] {
+  opacity: 0.85;
+}
+
+
+/* ------------------------------------------------------------
+   ALT tags button
+   ------------------------------------------------------------ */
+
+.tagsafe-auto-alt {
+  margin-right: 6px;
+}
+
+.tagsafe-auto-alt[aria-pressed="true"] {
+  border-color: var(--tagsafe-accent);
+
+  background: var(--tagsafe-accent);
+  color: var(--tagsafe-accent-text);
+
+  opacity: 1;
+}
+
+.tagsafe-auto-alt[aria-pressed="false"] {
+  opacity: 0.85;
+}
+
+
+/* ------------------------------------------------------------
+   Settings
+   ------------------------------------------------------------ */
+
+.tagsafe-settings-wrap {
+  display: inline-block;
+
+  margin-top: 8px;
+}
+
+.tagsafe-settings-toggle {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4px;
+}
+
+.tagsafe-settings-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 6px;
+}
+
+.tagsafe-settings-row[hidden] {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------
+   Scrollbar — Chromium / WebKit
+   ------------------------------------------------------------ */
+
+.tagsafe-tags::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tagsafe-tags::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tagsafe-tags::-webkit-scrollbar-thumb {
+  background: var(--tagsafe-border);
+
+  border-radius: 999px;
+}
+
+.tagsafe-tags::-webkit-scrollbar-thumb:hover {
+  background: var(--tagsafe-muted);
+}
+
+
+/* ------------------------------------------------------------
+   Small composer / narrow screen adjustments
+   ------------------------------------------------------------ */
+
+@media (max-width: 600px) {
+  .tagsafe-panel {
+    padding: 8px 9px;
+  }
+
+  .tagsafe-header {
+    align-items: stretch;
+    flex-direction: column;
+
+    gap: 7px;
+  }
+
+  .tagsafe-presets {
+    width: 100%;
+  }
+
+  .tagsafe-tags {
+    max-height: 240px;
+  }
+
+  .tagsafe-tag {
+    padding: 5px 8px;
+
+    font-size: 11px;
+  }
+
+  .tagsafe-save,
+  .tagsafe-post-cw,
+  .tagsafe-auto-alt,
+  .tagsafe-settings-toggle,
+  .tagsafe-settings-button {
+    font-size: 11px;
+  }
+}
+
+
+/* ------------------------------------------------------------
+   Reduced motion
+   ------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  .tagsafe-tag,
+  .tagsafe-save,
+  .tagsafe-post-cw,
+  .tagsafe-auto-alt,
+  .tagsafe-settings-toggle,
+  .tagsafe-settings-button {
+    transition: none;
+  }
+}
