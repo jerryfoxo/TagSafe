@@ -151,7 +151,7 @@ async function loadSettings() {
   defaultTags = defaultTags.filter((tag) => tags.includes(tag));
 
   if (!defaultTags.length) {
-    defaultTags = [tags[0] || "Vore"];
+    defaultTags = [tags[0] || "Content warning"];
   }
 
   selectedTags = new Set(defaultTags);
