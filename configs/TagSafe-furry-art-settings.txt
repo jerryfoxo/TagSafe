@@ -1,0 +1,72 @@
+# TagSafe settings
+#
+# General furry art configuration for TagSafe.
+# Lines beginning with # are comments and are ignored.
+#
+# Every tag used in DEFAULT, PRESET or CONFLICTS
+# must also exist under one of the TAGS categories.
+
+TAGS: General
+Furry
+
+TAGS: Character type
+Anthro
+Feral
+Human
+Creature
+
+TAGS: Content
+OC
+Fanart
+Transformation
+Macro
+Micro
+Monster
+
+TAGS: Warnings
+Blood
+Gore
+Body horror
+Flashing lights
+
+DEFAULT
+Furry
+
+PRESET: Anthro
+Furry
+Anthro
+
+PRESET: Feral
+Furry
+Feral
+
+PRESET: OC
+Furry
+OC
+
+PRESET: Fanart
+Furry
+Fanart
+
+PRESET: Transformation
+Furry
+Transformation
+
+PRESET: Macro
+Furry
+Macro
+
+PRESET: Micro
+Furry
+Micro
+
+PRESET: Gore
+Furry
+Gore
+
+PRESET: Flashing Lights
+Furry
+Flashing lights
+
+CONFLICTS
+Anthro | Feral

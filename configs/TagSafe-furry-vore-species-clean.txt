@@ -1,0 +1,170 @@
+# TagSafe settings
+#
+# Furry vore configuration for TagSafe.
+# Species are listed only once, with no pred/prey suffixes.
+# Lines beginning with # are comments and are ignored.
+
+TAGS: General
+Vore
+Furry
+
+TAGS: Type / route
+Oral vore
+Anal vore
+Unbirth
+Cock vore
+Endo
+Hard vore
+Self vore
+
+TAGS: Outcome / digestion
+Non-fatal
+Fatal
+No digestion
+Digestion
+
+TAGS: Tone / content
+Safe/Comfort
+Teasing
+Distress
+Gore
+
+TAGS: Predator gender
+Male pred
+Female pred
+Nonbinary pred
+Other pred
+Mixed pred
+
+TAGS: Prey gender
+Male prey
+Female prey
+Nonbinary prey
+Other prey
+Mixed prey
+
+TAGS: Species
+Wolf
+Fox
+Dog
+Coyote
+Jackal
+Hyena
+Lion
+Tiger
+Leopard
+Cheetah
+Panther
+Bear
+Panda
+Raccoon
+Otter
+Ferret
+Rabbit
+Hare
+Deer
+Horse
+Cow
+Bull
+Goat
+Sheep
+Pig
+Boar
+Kangaroo
+Mouse
+Rat
+Squirrel
+Bat
+Dragon
+Lizard
+Snake
+Crocodile
+Alligator
+Shark
+Dolphin
+Orca
+Seal
+Bird
+Eagle
+Owl
+Crow
+Griffin
+Protogen
+Synth
+Sergal
+
+DEFAULT
+Vore
+Furry
+
+PRESET: Oral Vore
+Vore
+Furry
+Oral vore
+
+PRESET: Anal Vore
+Vore
+Furry
+Anal vore
+
+PRESET: Unbirth
+Vore
+Furry
+Unbirth
+
+PRESET: Cock Vore
+Vore
+Furry
+Cock vore
+
+PRESET: Endo
+Vore
+Furry
+Endo
+Non-fatal
+
+PRESET: Non-fatal
+Vore
+Furry
+Non-fatal
+
+PRESET: Fatal
+Vore
+Furry
+Fatal
+
+PRESET: Digestion
+Vore
+Furry
+Digestion
+
+PRESET: No Digestion
+Vore
+Furry
+No digestion
+
+PRESET: Non-fatal Digestion
+Vore
+Furry
+Non-fatal
+Digestion
+
+PRESET: Fatal Digestion
+Vore
+Furry
+Fatal
+Digestion
+
+PRESET: Hard Vore
+Vore
+Furry
+Hard vore
+
+PRESET: Self Vore
+Vore
+Furry
+Self vore
+
+CONFLICTS
+Fatal | Non-fatal
+Digestion | No digestion

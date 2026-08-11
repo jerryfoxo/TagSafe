@@ -1,0 +1,102 @@
+# TagSafe settings
+#
+# Common vore-focused configuration for TagSafe.
+# Lines beginning with # are comments and are ignored.
+#
+# Every tag used in DEFAULT, PRESET or CONFLICTS
+# must also exist under one of the TAGS categories.
+
+TAGS: General
+Vore
+
+TAGS: Type / route
+Oral vore
+Anal vore
+Unbirth
+Endo
+Hard vore
+Self vore
+
+TAGS: Outcome / digestion
+Non-fatal
+Fatal
+No digestion
+Digestion
+
+TAGS: Tone / content
+Safe/Comfort
+Teasing
+Distress
+Gore
+
+TAGS: Predator gender
+Male pred
+Female pred
+Nonbinary pred
+Other pred
+Mixed pred
+
+TAGS: Prey gender
+Male prey
+Female prey
+Nonbinary prey
+Other prey
+Mixed prey
+
+DEFAULT
+Vore
+
+PRESET: Oral Vore
+Vore
+Oral vore
+
+PRESET: Anal Vore
+Vore
+Anal vore
+
+PRESET: Unbirth
+Vore
+Unbirth
+
+PRESET: Endo
+Vore
+Endo
+Non-fatal
+
+PRESET: Non-fatal
+Vore
+Non-fatal
+
+PRESET: Fatal
+Vore
+Fatal
+
+PRESET: Digestion
+Vore
+Digestion
+
+PRESET: No Digestion
+Vore
+No digestion
+
+PRESET: Non-fatal Digestion
+Vore
+Non-fatal
+Digestion
+
+PRESET: Fatal Digestion
+Vore
+Fatal
+Digestion
+
+PRESET: Hard Vore
+Vore
+Hard vore
+
+PRESET: Self Vore
+Vore
+Self vore
+
+CONFLICTS
+Fatal | Non-fatal
+Digestion | No digestion
