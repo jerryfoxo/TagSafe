@@ -19,111 +19,35 @@ function debug(...args) {
 const BUILTIN_TAG_GROUPS = [
   {
     name: "General",
-    tags: ["Vore"],
-  },
-  {
-    name: "Type / route",
     tags: [
-      "Oral vore",
-      "Anal vore",
-      "Cock vore",
-      "Unbirth",
-      "Endo",
-      "Hard vore",
+      "Content warning",
+      "Spoilers",
+      "Violence",
+      "Blood",
+      "Flashing lights",
+      "Sensitive content",
     ],
-  },
-  {
-    name: "Outcome / digestion",
-    tags: ["Non-fatal", "Fatal", "No digestion", "Digestion"],
-  },
-  {
-    name: "Tone / content",
-    tags: ["Safe/Comfort", "Teasing", "Distress", "Gore"],
-  },
-  {
-    name: "Predator gender",
-    tags: [
-      "Male pred",
-      "Female pred",
-      "Nonbinary pred",
-      "Other pred",
-      "Mixed pred",
-    ],
-  },
-  {
-    name: "Prey gender",
-    tags: [
-      "Male prey",
-      "Female prey",
-      "Nonbinary prey",
-      "Other prey",
-      "Mixed prey",
-    ],
-  },
-  {
-    name: "Species / character",
-    tags: ["Human prey", "Pokémon"],
   },
 ];
 
-const BUILTIN_DEFAULT_TAGS = ["Vore"];
+const BUILTIN_DEFAULT_TAGS = ["Content warning"];
 
 const BUILTIN_PRESETS = [
   {
-    name: "Oral Vore",
-    tags: ["Vore", "Oral vore"],
+    name: "Spoilers",
+    tags: ["Content warning", "Spoilers"],
   },
   {
-    name: "Anal Vore",
-    tags: ["Vore", "Anal vore"],
+    name: "Violence",
+    tags: ["Content warning", "Violence"],
   },
   {
-    name: "Cock Vore",
-    tags: ["Vore", "Cock vore"],
-  },
-  {
-    name: "Unbirth",
-    tags: ["Vore", "Unbirth"],
-  },
-  {
-    name: "Endo",
-    tags: ["Vore", "Endo", "Non-fatal"],
-  },
-  {
-    name: "Non-fatal",
-    tags: ["Vore", "Non-fatal"],
-  },
-  {
-    name: "Fatal",
-    tags: ["Vore", "Fatal"],
-  },
-  {
-    name: "Digestion",
-    tags: ["Vore", "Digestion"],
-  },
-  {
-    name: "No Digestion",
-    tags: ["Vore", "No digestion"],
-  },
-  {
-    name: "Non-fatal Digestion",
-    tags: ["Vore", "Non-fatal", "Digestion"],
-  },
-  {
-    name: "Fatal Digestion",
-    tags: ["Vore", "Fatal", "Digestion"],
-  },
-  {
-    name: "Hard Vore",
-    tags: ["Vore", "Hard vore"],
+    name: "Flashing lights",
+    tags: ["Content warning", "Flashing lights"],
   },
 ];
 
-const BUILTIN_CONFLICTS = [
-  ["Fatal", "Non-fatal"],
-  ["Digestion", "No digestion"],
-];
-
+const BUILTIN_CONFLICTS = [];
 // ============================================================
 // STATE
 // ============================================================
