@@ -117,22 +117,25 @@
 
 .tagsafe-tags {
   box-sizing: border-box;
-
-  max-height: 280px;
-
+  max-height: 220px;
   overflow-y: auto;
   overflow-x: hidden;
-
   padding-right: 6px;
-
-  color: var(--tagsafe-text);
-
   scrollbar-width: thin;
-  scrollbar-color: var(--tagsafe-border) transparent;
-
   overscroll-behavior: contain;
 }
 
+@media (max-height: 900px) {
+  .tagsafe-tags {
+    max-height: 180px;
+  }
+}
+
+@media (max-height: 760px) {
+  .tagsafe-tags {
+    max-height: 130px;
+  }
+}
 
 /* ------------------------------------------------------------
    Tag categories
